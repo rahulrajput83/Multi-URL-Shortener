@@ -1,0 +1,114 @@
+.navbar {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+}
+
+.logo {
+    margin: 1rem auto 0 2rem;
+    color: #4C3387;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.info {
+    margin: 1rem 2rem 0 auto;
+    padding: 0.5rem 1.5rem;
+    background: #4C3387;
+    border-radius: 0.3rem;
+    color: #fff;
+    font-weight: 550;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+.info:hover {
+    background: #fff;
+    color: #4C3387;
+}
+.container {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 3rem 0;
+    width: 50%;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.13);
+}
+.card h1 {
+    text-align: center;
+    opacity: 0.75;
+}
+.card .input-div {
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 3.5rem;
+    display: flex;
+}
+.input-div .input {
+    padding-left: 1rem;
+    width: 75%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border: 2px solid silver;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    border-right: none;
+}
+.input-div .button_url {
+    cursor: pointer;
+    font-size: 1rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    background: #4C3387;
+    border: none;
+    color: #fff;
+    height: 100%;
+    width: 25%;
+}
+.shortlink {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.shortlink .links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.links span {
+    width: 80%;
+    font-weight: 600;
+}
+.links .copy {
+    width: 7rem;
+    text-align: center;
+    line-height: 2rem;
+    background: #4C3387;
+    border-radius: 0.3rem;
+    color: #fff;
+    font-weight: 550;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+    }
+    .input-div .input {
+        width: 60%;
+    }
+    .input-div .button_url {
+        width: 40%;
+    }
+}
